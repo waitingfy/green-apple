@@ -39,7 +39,7 @@ body {
 	font-size: 62.5%; /* Resets 1em to 10px */
 	font-family: 'Lucida Sans Unicode',Arial,sans-serif;
 	background: url(images/right-col.gif) right repeat-y;
-	color: #666;
+	color: #000;
 	}
 
 #page {
@@ -69,7 +69,7 @@ min-height: 700px;overflow: auto;	}
 }
 
 #content {
-	font-size: 1.2em
+	font-size: 1.4em
 }
 
 .widecolumn .entry p {
@@ -96,8 +96,8 @@ li.alt {
 	text-decoration: none;
 }
 small, div.postmetadata {
-	font-size: 0.9em;
-	line-height: 1.5em;
+	font-siz
+	line-height: 1.5em;e: 0.9em;
 	}
 .postmetadata a {
 	text-decoration: none;
@@ -107,7 +107,10 @@ h1, h2, h3 {
 	font-family:  Verdana,'Lucida Grande','Trebuchet MS',Arial,Sans-Serif;
 	font-weight: 500;
 	}
-
+h1 span, h2 span, h3 span{
+    font-family:  Verdana,'Lucida Grande','Trebuchet MS',Arial,Sans-Serif;
+	font-weight: 700;
+}
 #headerimg h1 {
 	font-size: 4em;
 	text-align: left;
@@ -173,15 +176,15 @@ h3 {
 
 h1, h1 a, h1 a:hover, h1 a:visited {
 	text-decoration: none;
-	color: #999;
+	color: #000;
 
 	}
 
 h2, h2 a, h2 a:visited  {
-	color: #999;
+	color: #000;
 }
 h3, h3 a, h3 a:visited {
-	color: #999;
+	color: #000;
 }
 
 h2, h2 a, h2 a:hover, h2 a:visited, h3, h3 a:link, h3 a:visited, #sidebar h2, #sidebar2 h2, #wp-calendar caption, cite {
@@ -195,7 +198,7 @@ h3 a:hover, h3 a:active {
 
 
 .entry p a:visited {
-	color: #666;
+	color: #A8B772;
 	
 	}
 .more-link {
@@ -244,7 +247,7 @@ h2 a:hover, h3 a:hover {
 	text-decoration: none;
 	}
 a, a:link, a:visited {
-	color: #666;
+	color: #A8B772;
 }
 
 a:hover, a:active {
@@ -327,7 +330,7 @@ div#content {
 
 }
 .narrowcolumn .entry, .widecolumn .entry {
-	line-height: 1.4em;
+	
 }
 
 .widecolumn {
@@ -399,7 +402,7 @@ div#sidebar2 {
 	}
 
 .narrowcolumn .postmetadata {
-
+    margin-top:90px;
 	text-align: center;
 	border: none;
 	
@@ -1272,6 +1275,13 @@ hr {
 
 fieldset, form {
 	text-align: left !important;
+}
+
+#my-attachment-style{
+  font-size:30px;
+}
+.entry p{
+   font-size:18px;
 }
 /* "Daisy, Daisy, give me your answer do. I'm half crazy all for the love of you.
 	It won't be a stylish marriage, I can't afford a carriage.

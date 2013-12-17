@@ -44,8 +44,8 @@
 
 
 <?php if ('open' == $post->comment_status) : ?>
-
-
+<div style="width:840px;">
+<div id="postitleAndPost" style="width:450px;float:left;">
 <div class="posttitle"><h3><?php comment_form_title( 'Leave a Reply', 'Leave a Reply to %s' ); ?></h3></div>
 
 <div class="post"><div class="cancel-comment-reply">
@@ -60,10 +60,10 @@
 
 <?php if ( $user_ID ) : ?>
 
-<p>Logged in as <a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a>. <a href="<?php echo wp_logout_url(get_permalink()); ?>" title="Log out of this account">Log out &raquo;</a></p>
+<p>Logged in as <a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a>. <a href="<?php echo wp_logout_url(get_permalink()); ?>" title="Log out of this account">Log out ?</a></p>
 
 <?php else : ?>
-<p class="firstresponse">Name and Email Address are required fields. Your email will not be published or shared with third parties.</p>
+<p class="firstresponse">Name and Email Address are required fields.</br> Your email will not be published or shared with third parties.</p>
 <p><input type="text" name="author" id="author" value="<?php echo $comment_author; ?>" size="22" tabindex="1" <?php if ($req) echo "aria-required='true'"; ?> />
 <label for="author">Name <?php if ($req) echo "*"; ?></label></p>
 
@@ -89,3 +89,54 @@
 <?php endif; // If registration required and not logged in ?>
 
 <?php endif; // if you delete this the sky will fall on your head ?>
+</div>
+
+	 <div id="commentAd" style="width:336px;float:left;margin-left:50px;">   
+<?php
+       $cookieName = 'waitingfyAdIndex';
+       $comments_adIndex = 1;
+			if (isset($_COOKIE[$cookieName])) {
+			   $comments_adIndex = $_COOKIE[$cookieName];
+			}
+		//echo $comments_adIndex;	
+       if($comments_adIndex == 1){     
+	   ?>
+	  
+ <script type="text/javascript"><!--
+google_ad_client = "ca-pub-0295086493266141";
+/* adminAdLeft */
+google_ad_slot = "1565837638";
+google_ad_width = 336;
+google_ad_height = 280;
+//-->
+</script>
+	<?php 
+	   }else if($comments_adIndex == 2){
+	?>
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-0295086493266141";
+/* adminAdLeft1 */
+google_ad_slot = "7219504432";
+google_ad_width = 336;
+google_ad_height = 280;
+//-->
+</script>
+	<?php 
+	   }else if($comments_adIndex == 3){
+	?>
+ <script type="text/javascript"><!--
+google_ad_client = "ca-pub-0295086493266141";
+/* adminAdLeft2 */
+google_ad_slot = "8696237633";
+google_ad_width = 336;
+google_ad_height = 280;
+//-->
+</script>
+
+	<?php }?>	   
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+</div>
+<div class="clear"></div>

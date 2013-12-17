@@ -11,7 +11,7 @@
 			<p>A little something about you, the author. Nothing lengthy, just an overview.</p>
 			</li>
 			-->
-
+           
 			<?php if ( is_404() || is_category() || is_day() || is_month() ||
 						is_year() || is_search() || is_paged() ) {
 			?> <li>
@@ -58,8 +58,23 @@
 				
 			<?php } ?>
 -->
-
+           
 			<?php endif; ?>
 		</ul>
+		<?php if(is_attachment()){?>
+		 <div id="my_sidebar_ad" style="width:125px;height:605px;">
+			<script type="text/javascript"><!--
+google_ad_client = "ca-pub-0295086493266141";
+/* side_ad */
+google_ad_slot = "8091232434";
+google_ad_width = 120;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+			</div>
+			<?php } ?>
 </div>
 <!-- end #sidebar2 .sides -->
